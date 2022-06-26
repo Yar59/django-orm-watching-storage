@@ -11,6 +11,7 @@ PORT = env.str('PORT')
 NAME = env.str('NAME')
 USER = env.str('USER')
 PASSWORD = env.str('PASSWORD')
+DEBUG = env.bool('DEBUG', default=False)
 
 DATABASES = {
     'default': {
@@ -27,7 +28,6 @@ INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = 'REPLACE_ME'
 
-DEBUG = True
 
 ROOT_URLCONF = 'project.urls'
 
