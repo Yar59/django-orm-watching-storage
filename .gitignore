@@ -116,4 +116,5 @@ dmypy.json
 
 .idea/
 test.py
-*.lock
+poetry.lock
+pyproject.toml
