@@ -13,6 +13,7 @@ DB_USER = env.str('DB_USER')
 DB_PASSWORD = env.str('DB_PASSWORD')
 DEBUG = env.bool('DEBUG', default=False)
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DATABASES = {
     'default': {
@@ -27,7 +28,6 @@ DATABASES = {
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = 'REPLACE_ME'
 
 ROOT_URLCONF = 'project.urls'
 
